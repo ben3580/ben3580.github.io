@@ -6,94 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learn HTML</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <style>
-      #div1 {
-        color: black;
-        border: 2px solid black;
-        margin: 10px;
-        padding: 10px;
-        width: 100px;
-        height: 50px;
-        float: left;
-      }
-      #div2 {
-        color: red;
-        border: 2px solid red;
-        margin: 10px;
-        padding: 10px;
-        width: 100px;
-        height: 50px;
-        float: right;
-      }
-      #main_div{
-        background: silver;
-        padding: 50px;
-      }
-      #head1 {
-        text-decoration: underline;
-        text-align: center;
-        letter-spacing: 2px;
-        font-size: 30px;
-        font-family: "cooper black";
-      }
-      #par2 {
-        text-decoration: none;
-        font-size: 20px;
-        font-family: calibri;
-      }
-    </style>
   </head>
 
   <body>
 
-<!--
-    <div id="main_div">
-      <div id="div1"> Hello </div>
-      <div id="div2"> Hello </div>
-      <div style="clear: both"></div>
+    <div id="container">
+
+      <div id="header">
+        <h1 id="head1"> My website </h1>
+      </div>
+
+      <div id="nav">
+        <ul>
+          <a href="index.html"> <li>  Home </li> </a>
+          <a href="test/link.html"> <li> Essay </li> </a>
+          <a href="test/link.html"> <li> Projects </li> </a>
+          <a href="test/link.html"> <li> Contact me </li> </a>
+        </ul>
+      </div>
+
+      <div id="main">
+
+        <div id="left">
+          <a href="http://www.google.com"> Google </a> <br>
+          <img src="Incineroar.png" alt="Incineroar" title="Incineroar" width="100" height="100">
+        </div>
+
+        <div id="right">
+          <form action="">
+            <h2 style="text-align: center;"> Survey </h2>
+            <hr>
+            <table>
+              <tr>
+                <td> <label for="user"> Username </label> </td>
+                <td> <input type="text" name="user" id="user"> </td>
+              </tr>
+              <tr>
+                <td> <label for="password"> Password </label> </td>
+                <td> <input type="password" name="password" id="password"></td>
+              </tr>
+              <tr>
+                <td> <label> Gender </label> </td>
+                <td> Male <input type="radio" name="gender" value="male"> <br>
+                   Female <input type="radio" name="gender" value="female"> <br>
+                    Other <input type="radio" name="gender" value="other"> </td>
+              </tr>
+              <tr>
+                <td> <label> Likes </label> </td>
+                <td> Apple <input type="checkbox" name="apple" value="apple"> <br>
+                   Banana <input type="checkbox" name="banana" value="banana"> <br>
+                    Orange <input type="checkbox" name="orange" value="orange"> </td>
+              </tr>
+              <tr>
+                <td> <label for="country"> Age </label> </td>
+                <td>
+                  <select name="country" id="country">
+                    <option value=""> Select your age </option>
+                    <option value="18"> 0-17 </option>
+                    <option value="35"> 18-34 </option>
+                    <option value="50"> 35-49 </option>
+                    <option value="65"> 50-64 </option>
+                    <option value="100"> 65+ </option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td> <label for="comments"> Comments </label> </td>
+                <td> <textarea name="comments" id="comments" cols="40" rows="10"></textarea> </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td> <input type="submit" value="Click to submit" name="submit"> </td>
+              </tr>
+            </table>
+          </form>
+
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+
+      <div id="footer"></div>
+
     </div>
--->
-    <h1 id="head1"> This is a simple paragraph </h1>
-    <p id="par2"> Hello world </p>
+    <!--
+    <nav>
 
-    <h1> The index page </h1>
+    </nav>
+    <br><br><br><br>
 
-    <a href="http://www.google.com"> Google </a> <br>
-    <a href="http://www.bing.com"> Bing </a> <br>
-    <a href="test/link.html" target="_top"> Linked page </a> <br>
-    <a href="data.html#subheading"> Data page </a> <br>
 
-    <img src="Incineroar.png" alt="Incineroar" title="Incineroar" width="100" height="100">
 
-    <table>
-      <thead>
-        <tr>
-          <th> Fruit </th>
-          <th> Price </th>
-          <th> Amount </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td> Apple </td>
-          <td> 1.24 </td>
-          <td> 2 </td>
-        </tr>
-        <tr>
-          <td> Orange </td>
-          <td> 1.45 </td>
-          <td> 3 </td>
-        </tr>
-        <tr>
-          <td> Banana </td>
-          <td> 0.69 </td>
-          <td> 5 </td>
-        </tr>
-      </tbody>
-    </table>
+  -->
   </body>
 
 </html>
